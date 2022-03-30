@@ -8,7 +8,7 @@ This Lab/CTF focuses on Enumerating skills and LFI skills, it does not focus on 
 
 
 1) Enumerating </br>
-    I used nmap to analyse the IP and see the active ports and services running.</br>
+    I used `nmap` to analyse the IP and see the active ports and services running.</br>
       
 ```
 nmap -sC -sV <ip>
@@ -46,4 +46,21 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 53.51 seconds  
 </pre>
 
+Visited the IP in browser but a test website and nothing interesting.
+
+So i decided to `curl` 
+```
+curl -I <IP>
+```
+<pre>curl -I **.**.**.***
+HTTP/1.1 403 Forbidden
+Date: Wed, 30 Mar 2022 22:19:52 GMT
+Server: Apache/2.4.37 (centos) OpenSSL/1.1.1k mod_fcgid/2.3.9
+X-Backend-Server: office.paper
+Last-Modified: Sun, 27 Jun 2021 23:47:13 GMT
+ETag: "30c0b-5c5c7fdeec240"
+Accept-Ranges: bytes
+Content-Length: 199691
+Content-Type: text/html; charset=UTF-8
+</pre>
     
