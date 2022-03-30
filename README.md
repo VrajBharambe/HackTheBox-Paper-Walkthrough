@@ -9,9 +9,11 @@ This Lab/CTF focuses on Enumerating skills and LFI skills, it does not focus on 
 
 1) Enumerating </br>
     I used nmap to analyse the IP and see the active ports and services running.</br>
-        ``` nmap -sC -sV <ip> ```
-        My nmap result </br>
-       nmap -sC -sV <ip> <pre>
+      
+```
+nmap -sC -sV <ip>
+```
+<pre>
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-31 03:48 IST
 Nmap scan report for office.paper (10.10.11.143)
 Host is up (0.26s latency).
@@ -42,3 +44,5 @@ PORT    STATE SERVICE  VERSION
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 53.51 seconds  
 </pre>
+
+    
