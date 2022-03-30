@@ -14,8 +14,9 @@ This Lab/CTF focuses on Enumerating skills and LFI skills, it does not focus on 
 nmap -sC -sV <ip>
 ```
 <pre>
+nmap -sC -sV **.**.**.***
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-31 03:48 IST
-Nmap scan report for office.paper (10.10.11.143)
+Nmap scan report for office.paper (**.**.**.***)
 Host is up (0.26s latency).
 Not shown: 997 closed tcp ports (conn-refused)
 PORT    STATE SERVICE  VERSION
