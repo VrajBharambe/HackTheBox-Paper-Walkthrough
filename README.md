@@ -111,4 +111,15 @@ so i decided to go deeper by using
 ```
 recyclops list ./../
 ```
+I found `user.txt` but we didnt have permission to read it.
+
+Their was a unusual file named "hubot", so i listed its contents using 
+```
+recyclops list ./../hubot/
+```
+I read each file content but found password in `.env` file. I used command 
+```
+recyclops file ./../hubot/.env
+```
+
 
