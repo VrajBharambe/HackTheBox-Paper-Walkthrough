@@ -93,6 +93,14 @@ I went to `exploit.db` and search for `WordPress 5.2.3` and found exploit `CVE: 
 
 We just have to put `?static=1` at end of `office.paper` to reveal secret page in browser.
 ```
-htt://office.paper/?static=1
+http://office.paper/?static=1
 ```
+Here we found that their is another host `chat.office.paper` so we also add that to our `etc/hosts`</br>
+
+Upon visiting the `chat.office.paper` and messing with it i found the admin `DwightKSchrute` added a bot called `Recyclops`.</br>
+
+After messing with `Recyclops` i figured out that it take certain commands as mentioned in chat but have to start with "recyclops".
+</br>
+`recyclops list ./` = `ls`
+`recyclops file ./<filename>` = `cat <filename>`
 
