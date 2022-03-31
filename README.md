@@ -77,3 +77,11 @@ sudo nano /etc/hosts
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 </pre>
+
+Than i visited `office.paper` in browser and figured out it was an wordpress website as wordpress.org was mention at bottom of page and i was sure after viewing the page source.</br>
+The First thing i do if i find a wordpress website is to scan it with `wpscan` to look for vulnerability and users.</br>
+```
+wpscan -e vp vt u --url http://office.paper/
+```
+WOOOAH we found it was using vulnerable wordpress version 5.2.3, which was also found by nmap.
+
