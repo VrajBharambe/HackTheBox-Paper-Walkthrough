@@ -92,5 +92,5 @@ WOOOAH we found that it was using vulnerable wordpress version 5.2.3, which was 
 I went to `exploit.db` and search for `WordPress 5.2.3` and found exploit `CVE: 2019-17671`. </br>
 
 We just have to put `?static=1` at end of `office.paper` to reveal secret page in browser.
-    
-    
+
+## we
