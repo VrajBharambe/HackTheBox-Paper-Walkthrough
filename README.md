@@ -8,7 +8,8 @@ This Lab/CTF focuses on Enumerating skills and LFI skills, it does not focus on 
 
 
 ## Enumerating </br>
-    I used `nmap` to analyse the IP and see the active ports and services running.</br>
+
+   I used `nmap` to analyse the IP and see the active ports and services running.</br>
       
 ```
 nmap -sC -sV <ip>
