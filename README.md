@@ -124,6 +124,9 @@ recyclops file ./../hubot/.env
 </br>
 I have PASSWORD but no USERNAME so i listed the `/etc/passwd ` directory. Using
 ```
+recyclops list ./../../../etc/passwd
+```
+```
 recyclops list ./../../../etc/paswd
 ```
 and we found username `dwight`.
