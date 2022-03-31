@@ -7,7 +7,7 @@ This Lab/CTF focuses on Enumerating skills and LFI skills, it does not focus on 
 
 
 
-1) Enumerating </br>
+## Enumerating </br>
     I used `nmap` to analyse the IP and see the active ports and services running.</br>
       
 ```
@@ -87,10 +87,10 @@ wpscan -e vp vt u --url http://office.paper/
 WOOOAH we found that it was using vulnerable wordpress version 5.2.3, which was also found by nmap.
 
 
-2) Exploiting </br>
+## Exploiting </br>
 
 I went to `exploit.db` and search for `WordPress 5.2.3` and found exploit `CVE: 2019-17671`. </br>
 
 We just have to put `?static=1` at end of `office.paper` to reveal secret page in browser.
 
-## we
+
