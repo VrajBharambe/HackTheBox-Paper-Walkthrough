@@ -108,5 +108,7 @@ Yes i did LFI by adding `./`.</br>
 I did not found anything interesting using 
 `recyclops list ./`
 so i decided to go deeper by using
-`recyclops list ./../`
+```
+recyclops list ./../
+```
 
