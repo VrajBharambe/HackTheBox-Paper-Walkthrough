@@ -101,6 +101,12 @@ Upon visiting the `chat.office.paper` and messing with it i found the admin `Dwi
 
 After messing with `Recyclops` i figured out that it take certain commands as mentioned in chat but have to start with "recyclops".
 </br>
-`recyclops list ./` = `ls`
-`recyclops file ./<filename>` = `cat <filename>`
+`recyclops list ./` = `ls` </br>
+`recyclops file ./<filename>` = `cat <filename>`</br>
+
+Yes i did LFI by adding `./`.</br>
+I did not found anything interesting using 
+`recyclops list ./`
+so i decided to go deeper by using
+`recyclops list ./../`
 
