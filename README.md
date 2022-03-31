@@ -71,7 +71,7 @@ sudo nano /etc/hosts
 <pre>
 127.0.0.1	localhost
 127.0.1.1	kali
-**.**.**.***   office.paper  chat.office.paper
+**.**.**.***     office.paper 
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
 ff02::1 ip6-allnodes
