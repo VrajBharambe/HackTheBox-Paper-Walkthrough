@@ -122,7 +122,7 @@ I read each file content but found password in `.env` file. I used command
 recyclops file ./../hubot/.env
 ```
 </br>
-I have PASSWORD but no USERNAME so i listed the `/etc/passwd` directory. Using
+I have PASSWORD but no USERNAME so i listed the `/etc/passwd ` directory. Using
 ```
 recyclops list ./../../../etc/paswd
 ```
@@ -162,7 +162,7 @@ or
 ```
 bash linpeas.sh
 ```
-</br>>
+</br>
 
 Read the Root Flag  at `/root/root.txt`
 ```
