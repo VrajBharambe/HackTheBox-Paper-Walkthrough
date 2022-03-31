@@ -68,4 +68,12 @@ We notice `X-Backend-Server: office.paper`, so in order to access this lets add 
 ```
 sudo nano /etc/hosts
 ```
-
+<pre>
+    127.0.0.1	localhost
+127.0.1.1	kali
+10.10.11.143   office.paper  chat.office.paper
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+</pre>
