@@ -122,8 +122,11 @@ I read each file content but found password in `.env` file. I used command
 recyclops file ./../hubot/.env
 ```
 I have PASSWORD but no USERNAME so i listed the `/etc/passwd ` directory. Using
+```
+recyclops list ./../../../etc/passwd
+```
 
-and we found username `dwight`.
+We found username `dwight`.
 
 ## Gaining Access </br>
 I ssh into server using credentials found. 
