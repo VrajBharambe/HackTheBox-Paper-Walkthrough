@@ -79,9 +79,15 @@ ff02::2 ip6-allrouters
 </pre>
 
 Than i visited `office.paper` in browser and figured out it was an wordpress website as wordpress.org was mention at bottom of page and i was sure after viewing the page source.</br>
-The First thing i do if i find a wordpress website is to scan it with `wpscan` to look for vulnerability and users.</br>
+The First thing i do if i find a wordpress website is to scan it with `wpscan` to look for vulnerabilities and users.</br>
 ```
 wpscan -e vp vt u --url http://office.paper/
 ```
-WOOOAH we found it was using vulnerable wordpress version 5.2.3, which was also found by nmap.
+WOOOAH we found that it was using vulnerable wordpress version 5.2.3, which was also found by nmap.
 
+
+2) Exploiting </br>
+I went to `exploit.db` and search for `WordPress 5.2.3` and found exploit `CVE: 2019-17671`. </br>
+We just have to put `?static=1` at end of `office.paper` to reveal secret page in browser.
+    
+    
