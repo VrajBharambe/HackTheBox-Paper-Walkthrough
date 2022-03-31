@@ -64,3 +64,8 @@ Content-Length: 199691
 Content-Type: text/html; charset=UTF-8
 </pre>
     
+We notice `X-Backend-Server: office.paper`, so in order to access this lets add this our hosts list at `/etc/hosts`
+```
+sudo nano /etc/hosts
+```
+
