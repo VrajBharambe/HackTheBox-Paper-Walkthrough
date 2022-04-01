@@ -6,7 +6,7 @@ This is my first public walkthrough for a CTF. I would appriciate any contructiv
 This Lab/CTF focuses on Enumerating skills and LFI skills, it does not focus on Priv-Esc or other things which are unlike other CTFs.
 
 *****
-NOTES = Replace <ip> with your machine's IP and i have purposefully redacted my machine's ip with "*".
+NOTES = Replace <<ip>> with your machine's IP and i have purposefully redacted my machine's ip with "*".
 *****
 
 ## Enumerating </br>
