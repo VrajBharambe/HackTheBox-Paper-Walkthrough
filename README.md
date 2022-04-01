@@ -1,5 +1,5 @@
 # HackTheBox-Paper-Walkthrough
-This the the walkthrough for Paper lab in HackTheBox (https://app.hackthebox.com/machines/Paper)
+This is the walkthrough for Paper lab in HackTheBox (https://app.hackthebox.com/machines/Paper)
 This is my first public walkthrough for a CTF. I would appriciate any contructive critism and suggestions.
 
 
