@@ -5,7 +5,9 @@ This is my first public walkthrough for a CTF. I would appriciate any contructiv
 
 This Lab/CTF focuses on Enumerating skills and LFI skills, it does not focus on Priv-Esc or other things which are unlike other CTFs.
 
-
+*****
+NOTES = Replace <ip> with your machine's IP and i have purposefully redacted my machine's ip with "*".
+*****
 
 ## Enumerating </br>
 
@@ -47,7 +49,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 53.51 seconds  
 </pre>
 
-Visited the IP in browser but a test website and nothing interesting.
+Visited the IP in browser but it was a test website and nothing interesting.
 
 So i decided to `curl` 
 ```
@@ -90,7 +92,7 @@ WOOOAH we found that it was using vulnerable wordpress version 5.2.3, which was 
 
 ## Exploiting </br>
 
-I went to `exploit.db` and search for `WordPress 5.2.3` and found exploit `CVE: 2019-17671`. </br>
+I went to `exploit.db` and search for `WordPress 5.2.3` and found exploit `CVE: 2019-17671`. </br>https://www.exploit-db.com/exploits/47690
 
 We just have to put `?static=1` at end of `office.paper` to reveal secret page in browser.
 ```
