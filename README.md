@@ -101,14 +101,14 @@ http://office.paper/?static=1
 Here we found that there is another host `chat.office.paper` so we also add that to our `etc/hosts`</br>
 <pre>127.0.0.1	localhost
 127.0.1.1	kali
-10.10.11.143   office.paper  chat.office.paper
+**.**.**.***   office.paper  chat.office.paper
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters</pre>
-Upon visiting the `chat.office.paper` and messing with it i found the admin `DwightKSchrute` added a bot called `Recyclops`.</br>
+Upon visiting the `chat.office.paper` and messing with it i found that the admin `DwightKSchrute` added a bot called `Recyclops`.</br>
 
-After messing with `Recyclops` i figured out that it take certain commands as mentioned in chat but have to start with "recyclops".
+After messing with `Recyclops` i figured out that it take certain commands as mentioned in chat but has to start with "recyclops".
 </br>
 `recyclops list ./` = `ls` </br>
 `recyclops file ./<filename>` = `cat <filename>`</br>
